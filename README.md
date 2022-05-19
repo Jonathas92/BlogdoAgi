@@ -25,6 +25,9 @@ A ferramenta Cucumber foi utilizada para executar o teste em formato BDD, escrit
 Toda alteração efetuada na branch main executará o teste, gerando evidencias com Screenshot apenas no caso de falha.
 <img src="https://github.com/pauloribeiro93/BlogdoAgi/blob/main/gifs/CICD.png"/>
 
+Falha nos Testes é gerado Screenshot
+<img src="https://github.com/pauloribeiro93/BlogdoAgi/blob/main/gifs/CICD_Falha.png"/>
+
 
 ### ⚠️ WebDrivers: Incluir a localização em sue ambiente Path (versão compatível com o seu navegador):
 
@@ -52,6 +55,8 @@ cucumber BRWOSER=Seu navegador
 ```
 ### Visualização da Automação:
 <img src="https://github.com/pauloribeiro93/BlogdoAgi/blob/main/gifs/ezgif.com-gif-maker.gif"/>
+
+
 
 
 
