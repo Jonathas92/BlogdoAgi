@@ -58,5 +58,5 @@ jobs:
       if: failure()
       with:
         name: screenshots
-        path: ${{ env.caminho }}screenshots/
+        path: ${{ env.caminho }}/screenshots/
 
