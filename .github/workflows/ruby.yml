@@ -16,13 +16,18 @@ on:
 permissions:
   contents: read
 
+env:
+  TZ: America/Sao_Paulo
+  caminho: BlogdoAgi/
+  
+
 jobs:
   test:
 
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        ruby-version: ['2.6', '2.7', '3.0']
+        ruby-version: ['2.7']
 
     steps:
     - uses: actions/checkout@v3
@@ -36,3 +41,25 @@ jobs:
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - name: Install Gems
       run: bundle install
+    - name: Config chromedriver
+      uses: nanasess/setup-chromedriver@master
+      with:
+           # Optional: do not specify to match Chrome's version
+        chromedriver-version: '95.0.4638.69'
+    - run: |
+        export DISPLAY=:99
+        chromedriver --url-base=/wd/hub &
+        sudo Xvfb -ac :99 -screen 0 1280x1024x24 > /dev/null 2>&1 & # optional
+          
+    - name: Run tests
+      run: |
+        cd ${{ env.caminho }}
+        bundle exec cucumber -p chrome_headless
+      
+    - name: Upload Screenshots
+      uses: actions/upload-artifact@v2.2.4
+      if: failure()
+      with:
+        name: screenshots
+        path: ${{ env.caminho }}relatorio/
+
