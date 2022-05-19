@@ -19,6 +19,7 @@ permissions:
 env:
   TZ: America/Sao_Paulo
   caminho: /home/runner/work/BlogdoAgi/BlogdoAgi
+  BROWSER: BROWSER
   
 
 jobs:
@@ -51,7 +52,7 @@ jobs:
     - name: Run tests
       run: |
         cd ${{ env.caminho }}
-        bundle exec cucumber BROWSER=chrome_headless
+        bundle exec cucumber ${{ env.BROWSER }}=chrome_headless
       
     - name: Upload Screenshots
       uses: actions/upload-artifact@v2.2.4
