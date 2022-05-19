@@ -1,5 +1,5 @@
 Dado('que eu entre no blog do Agi') do
-    Home.new.acess_blog
+    Home.new.acess_blo
   end
   
   Quando('clico na lupa de pesquisa') do
