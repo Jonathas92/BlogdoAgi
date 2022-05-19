@@ -2,8 +2,8 @@
 
 ## Objetivo
 
-Automatizar os dois cenários da funcionalidade pesquisa, afim de validar seu funcionamento.
-A ferramenta Cucumber foi utilizada para executar o teste em formato BDD, escrito na liguagem Gherkin.
+Automatizar os dois cenários da funcionalidade pesquisa, a fim de validar seu funcionamento.
+A ferramenta Cucumber foi utilizada para executar o teste escrito na liguagem Gherkin.
  
 ![fluxo de trabalho de exemplo](https://github.com/pauloribeiro93/BlogdoAgi/actions/workflows/ruby.yml/badge.svg)
 
@@ -16,17 +16,6 @@ A ferramenta Cucumber foi utilizada para executar o teste em formato BDD, escrit
 <br>gem cucumber
 <br>gem selenium-webdriver, "3.142.7"
 <br>gem rspec, "3.10"
-
-
-### :infinity: CI/CD
-
-- GitHub Actions
-
-Toda alteração efetuada na branch main executará o teste, gerando evidencias com Screenshot apenas no caso de falha.
-<img src="https://github.com/pauloribeiro93/BlogdoAgi/blob/main/gifs/CICD.png"/>
-
-Falha nos Testes é gerado Screenshot
-<img src="https://github.com/pauloribeiro93/BlogdoAgi/blob/main/gifs/CICD_Falha.png"/>
 
 
 ### ⚠️ WebDrivers: Incluir a localização em sue ambiente Path (versão compatível com o seu navegador):
@@ -51,19 +40,26 @@ bundle install
 ###  :runner: Executando os testes
   Utilize o seguinte comando para executar todos os cenários de teste:
 ```
-cucumber BRWOSER=Seu navegador
+cucumber BROWSER=Seu navegador
 ```
-### Visualização da Automação:
-<img src="https://github.com/pauloribeiro93/BlogdoAgi/blob/main/gifs/ezgif.com-gif-maker.gif"/>
-
-
-
-
-
 
 ###  🔩 Cenários de Testes
-Foi colocado tags nos cenários caso precise executar isoladamente, sendo assim nenhum teste é depende um do outro prezando a boa prática.
+Foram inseridas tags nos cenários caso precise executar isoladamente. Sendo assim, nenhum teste é dependente do outro, prezando a boa prática.
 ```
 Cenario 1: Tentar pesquisar utilizando o Enter em vez de clicar pesquisar.@feliz 
 cenario 2: Validar se a mensagem de 'Nenhum resultado' é apresentado utilizando caracteres ou com emojis.@fail
 ```
+
+### Visualização da Automação:
+<img src="https://github.com/pauloribeiro93/BlogdoAgi/blob/main/gifs/ezgif.com-gif-maker.gif"/>
+
+
+### :infinity: CI/CD
+
+- GitHub Actions
+
+#### Toda alteração efetuada na branch main executará o teste, gerando evidencias com Screenshot apenas no caso de falha.
+<img src="https://github.com/pauloribeiro93/BlogdoAgi/blob/main/gifs/CICD.png"/>
+
+####  Falha nos Testes é gerado Screenshot
+<img src="https://github.com/pauloribeiro93/BlogdoAgi/blob/main/gifs/CICD_Falha.png"/>
