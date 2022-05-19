@@ -1,4 +1,10 @@
 # BlogdoAgi
+
+## Objetivo
+
+Automatizar os dois cenários da funcionalidade pesquisa, afim de validar seu funcionamento.
+A ferramenta Cucumber foi utilizada para executar o teste em formato BDD, escrito na liguagem Gherkin.
+ 
 ![fluxo de trabalho de exemplo](https://github.com/pauloribeiro93/BlogdoAgi/actions/workflows/ruby.yml/badge.svg)
 
 ## 🛠️ Ferramentas Utilizadas
@@ -19,7 +25,6 @@
 Toda alteração efetuada na branch main executará o teste, gerando evidencias com Screenshot apenas no caso de falha.
 <img src="https://github.com/pauloribeiro93/BlogdoAgi/blob/main/gifs/CICD.png"/>
 
-A ferramenta Cucumber foi utilizada para executar o teste em formato BDD, escrito na liguagem Gherkin.
 
 ### ⚠️ WebDrivers: Incluir a localização em sue ambiente Path (versão compatível com o seu navegador):
 
