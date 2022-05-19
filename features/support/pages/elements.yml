@@ -1,0 +1,5 @@
+search_field: "(//input[@class='search-field'])[1]"
+result: "h1.archive-title > span"
+btn_search: "div.desktop-search > form.search-form > input.search-submit"
+not_result: "h1.entry-title"
+subtitle: "div.entry-content > p"
