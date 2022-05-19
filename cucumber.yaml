@@ -1,6 +1,6 @@
 default: -p no_cloud_report -p html -p bdd 
 no_cloud_report: --publish-quiet
-html: --format html --out=relatorio/report.html
+html: --format html --out=data/report.html
 bdd: --format pretty
 firefox: BROWSER=firefox
 fire_headless: BROWSER=fire_headless
