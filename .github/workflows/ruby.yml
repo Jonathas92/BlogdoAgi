@@ -51,7 +51,7 @@ jobs:
     - name: Run tests
       run: |
         cd ${{ env.caminho }}
-        bundle exec cucumber -p chrome_headless
+        bundle exec cucumber BROWSER=chrome_headless
       
     - name: Upload Screenshots
       uses: actions/upload-artifact@v2.2.4
