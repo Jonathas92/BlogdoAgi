@@ -55,5 +55,5 @@ jobs:
         if: always()
         with:
           name: Report
-          path: '${{ env.caminho }}/data/'
+          path: '${{ env.caminho }}'
           
