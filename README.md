@@ -16,7 +16,9 @@
 
 - GitHub Actions
 
-Toda alteração efetuada na branch main executará o teste, gerando evidencias com Screenshot apenas no caso de falha.  
+Toda alteração efetuada na branch main executará o teste, gerando evidencias com Screenshot apenas no caso de falha.
+<img src="https://github.com/pauloribeiro93/BlogdoAgi/blob/main/gifs/CICD.png"/>
+
 A ferramenta Cucumber foi utilizada para executar o teste em formato BDD, escrito na liguagem Gherkin.
 
 ### ⚠️ WebDrivers: Incluir a localização em sue ambiente Path (versão compatível com o seu navegador):
@@ -45,6 +47,7 @@ cucumber BRWOSER=Seu navegador
 ```
 ### Visualização da Automação:
 <img src="https://github.com/pauloribeiro93/BlogdoAgi/blob/main/gifs/ezgif.com-gif-maker.gif"/>
+
 
 
 
