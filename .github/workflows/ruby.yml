@@ -17,7 +17,6 @@ permissions:
   contents: read
 
 env:
-  TZ: America/Sao_Paulo
   caminho: /home/runner/work/BlogdoAgi/BlogdoAgi
   BROWSER: BROWSER
   
@@ -60,4 +59,12 @@ jobs:
       with:
         name: screenshots
         path: ${{ env.caminho }}/screenshots/
+
+     # Publicar relatorio em html
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@4.1.4
+      with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: ${{ env.caminho }}/relatorio/
 
