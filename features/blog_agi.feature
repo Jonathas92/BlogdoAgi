@@ -1,7 +1,7 @@
 #language: pt
 
 Funcionalidade: Conteúdos
-    Serão executados testes que permitam realizar listagem, inserção, edição e exclusão dos registros relacionados.
+    Serão executados testes que permitam pesquisa utilizando o Enter em vez de clicar pesquisar e  Validar se a mensagem de Nenhum resultado quando utilizamos caracteres invalidos.
 
      Contexto: Acesso e clique na lupa 
             Dado que eu entre no blog do Agi
